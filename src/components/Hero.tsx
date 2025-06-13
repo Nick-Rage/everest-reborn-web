@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   return (

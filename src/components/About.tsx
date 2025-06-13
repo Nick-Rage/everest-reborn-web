@@ -1,5 +1,5 @@
-
 import { Target, Users, Lightbulb, Rocket, Award, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   const values = [
