@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Industry from "@/components/Industry";
 import Team from "@/components/Team";
+import Ecosystem from "@/components/Ecosystem";
 import Focus from "@/components/Focus";
 import GetStarted from "@/components/GetStarted";
 import Contact from "@/components/Contact";
@@ -17,6 +18,7 @@ const Index = () => {
       <About />
       <Industry />
       <Team />
+      <Ecosystem />
       <Focus />
       <GetStarted />
       <Contact />
