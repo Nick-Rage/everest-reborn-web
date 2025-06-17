@@ -5,16 +5,20 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-slate-900 text-white">
+    <section id="contact" className="py-24 bg-slate-900 text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            Contact
+          </h2>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h3 className="text-3xl font-bold mb-8">
                 Let's Build the 
                 <span className="text-blue-400"> Future Together</span>
-              </h2>
+              </h3>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Ready to scale your innovative company? We'd love to hear from you. 
                 Reach out to discuss how we can partner together.
@@ -56,7 +60,7 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="bg-white text-slate-900">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+                <h4 className="text-2xl font-bold mb-6">Get in Touch</h4>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
