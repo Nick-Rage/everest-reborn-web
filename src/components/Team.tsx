@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const Team = () => {
   const scrollToNext = () => {
-    const focusSection = document.getElementById('focus');
-    if (focusSection) {
-      focusSection.scrollIntoView({ behavior: 'smooth' });
+    const ecosystemSection = document.getElementById('ecosystem');
+    if (ecosystemSection) {
+      ecosystemSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 

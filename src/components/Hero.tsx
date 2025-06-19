@@ -16,13 +16,36 @@ const Hero = () => {
 
   return (
     <section className="relative pt-20 pb-32 bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden">
+      {/* Background geometric shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 -left-20 w-80 h-80 bg-gradient-to-br from-blue-600 to-purple-600 transform rotate-45 rounded-3xl opacity-10"></div>
+        <div className="absolute bottom-20 -right-20 w-96 h-96 bg-gradient-to-br from-indigo-500 to-blue-700 transform -rotate-45 rounded-3xl opacity-10"></div>
+      </div>
+      
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content - Logo */}
+            {/* Left Content - Modern Geometric Design */}
             <div className="flex justify-center lg:justify-start">
-              <div className="w-64 h-64 bg-blue-600 rounded-full flex items-center justify-center">
-                <TrendingUp className="w-32 h-32 text-white" />
+              <div className="relative">
+                {/* Main geometric composition */}
+                <div className="relative w-80 h-80">
+                  {/* Background geometric shapes */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 transform rotate-12 rounded-3xl opacity-20"></div>
+                  <div className="absolute top-8 left-8 w-64 h-64 bg-gradient-to-br from-indigo-500 to-blue-700 transform -rotate-6 rounded-2xl"></div>
+                  
+                  {/* Central AI/AGI circle */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-full shadow-lg flex items-center justify-center">
+                    <div className="text-center">
+                      <TrendingUp className="w-8 h-8 text-blue-600 mx-auto mb-1" />
+                      <div className="text-xs font-bold text-gray-700">AGI</div>
+                    </div>
+                  </div>
+                  
+                  {/* Floating elements */}
+                  <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl opacity-80"></div>
+                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-500 rounded-lg opacity-70"></div>
+                </div>
               </div>
             </div>
             
@@ -55,9 +78,19 @@ const Hero = () => {
                 </h2>
                 
                 <div className="mb-8">
-                  <div className="text-xl text-gray-600 mb-4">AI & AGI in a graphic</div>
-                  <div className="w-full h-32 bg-gradient-to-r from-blue-200 to-purple-200 rounded-lg flex items-center justify-center">
-                    <span className="text-gray-600">AI & AGI Visualization</span>
+                  <div className="text-xl text-gray-600 mb-4">AI & AGI Ecosystem</div>
+                  <div className="relative w-full h-32 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg overflow-hidden">
+                    {/* Geometric pattern background */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="relative">
+                        <div className="w-20 h-20 bg-blue-600 transform rotate-45 rounded-lg opacity-20"></div>
+                        <div className="absolute top-2 left-2 w-16 h-16 bg-indigo-500 transform -rotate-12 rounded-lg opacity-30"></div>
+                        <div className="absolute top-4 left-4 w-12 h-12 bg-purple-500 transform rotate-6 rounded-lg opacity-40"></div>
+                      </div>
+                    </div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-gray-700 font-semibold">Intelligence Convergence</span>
+                    </div>
                   </div>
                 </div>
                 
