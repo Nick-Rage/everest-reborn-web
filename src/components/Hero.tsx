@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Brain, Zap, Target } from "lucide-react";
 
@@ -19,42 +18,27 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content - Modern AI/AGI Visual */}
+            {/* Left Content - Exact graphic recreation */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-96 h-96">
-                {/* Background grid pattern */}
-                <div className="absolute inset-0 opacity-10">
-                  <div className="grid grid-cols-8 gap-2 h-full">
-                    {Array.from({ length: 64 }).map((_, i) => (
-                      <div key={i} className="bg-blue-600 rounded-sm"></div>
-                    ))}
-                  </div>
-                </div>
-                
-                {/* Main geometric composition */}
-                <div className="absolute inset-0">
-                  {/* Large blue rectangle */}
-                  <div className="absolute top-8 left-8 w-48 h-32 bg-blue-600 rounded-xl shadow-lg"></div>
-                  
-                  {/* Smaller overlapping shapes */}
-                  <div className="absolute top-16 right-8 w-32 h-32 bg-indigo-500 rounded-2xl shadow-md transform rotate-12"></div>
-                  <div className="absolute bottom-16 left-16 w-24 h-24 bg-purple-500 rounded-xl shadow-md transform -rotate-6"></div>
-                  
-                  {/* Central AI hub */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-blue-200">
-                    <Brain className="w-8 h-8 text-blue-600" />
+                {/* Dark background with texture */}
+                <div className="absolute inset-0 bg-gray-800 rounded-3xl">
+                  {/* Dotted pattern overlay - exact recreation */}
+                  <div className="absolute inset-0 opacity-20">
+                    <div className="grid grid-cols-12 gap-2 p-8 h-full">
+                      {Array.from({ length: 144 }).map((_, i) => (
+                        <div key={i} className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                      ))}
+                    </div>
                   </div>
                   
-                  {/* Floating connection nodes */}
-                  <div className="absolute top-12 left-1/2 w-4 h-4 bg-blue-400 rounded-full"></div>
-                  <div className="absolute bottom-12 right-12 w-6 h-6 bg-indigo-400 rounded-full"></div>
-                  <div className="absolute top-1/3 right-4 w-3 h-3 bg-purple-400 rounded-full"></div>
+                  {/* Blue geometric rectangle - exact positioning */}
+                  <div className="absolute bottom-0 left-0 w-48 h-32 bg-blue-600 transform rotate-12 rounded-2xl"></div>
                   
-                  {/* Connection lines */}
-                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 384 384">
-                    <path d="M50 50 Q200 100 350 150" stroke="#3B82F6" strokeWidth="2" fill="none" opacity="0.3"/>
-                    <path d="M100 300 Q200 200 300 100" stroke="#6366F1" strokeWidth="2" fill="none" opacity="0.3"/>
-                  </svg>
+                  {/* White circular element with text */}
+                  <div className="absolute bottom-8 left-8 bg-white rounded-full px-8 py-4 shadow-lg">
+                    <span className="text-gray-800 font-semibold text-lg">Partner with us</span>
+                  </div>
                 </div>
               </div>
             </div>

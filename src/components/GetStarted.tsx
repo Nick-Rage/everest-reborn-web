@@ -27,6 +27,31 @@ const GetStarted = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
+            {/* Exact recreation of get started graphic */}
+            <div className="flex justify-center mb-12">
+              <div className="relative w-80 h-64">
+                {/* Dark background matching the pattern */}
+                <div className="w-full h-full bg-gray-800 rounded-3xl relative overflow-hidden">
+                  {/* Dotted pattern overlay */}
+                  <div className="absolute inset-0 opacity-15">
+                    <div className="grid grid-cols-12 gap-2 p-6 h-full">
+                      {Array.from({ length: 144 }).map((_, i) => (
+                        <div key={i} className="w-1 h-1 bg-blue-400 rounded-full"></div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Orange/yellow geometric element */}
+                  <div className="absolute top-4 left-4 w-24 h-18 bg-orange-500 transform rotate-12 rounded-xl"></div>
+                  
+                  {/* Get Started text card */}
+                  <div className="absolute bottom-6 right-6 bg-white rounded-full px-6 py-3 shadow-lg">
+                    <span className="text-gray-800 font-semibold">Get Started</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <div className="inline-flex items-center gap-2 bg-blue-600/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8">
               <Sparkles className="w-5 h-5 text-blue-400" />
               <span className="text-blue-400 font-medium">Ready to Transform?</span>

@@ -18,16 +18,27 @@ const About = () => {
             About Us
           </h2>
           
-          {/* Modern visual separator */}
+          {/* Exact recreation of the about graphic */}
           <div className="flex justify-center mb-12">
-            <div className="relative">
-              {/* Modern geometric separator */}
-              <div className="flex items-center gap-4">
-                <div className="w-8 h-8 bg-blue-500 rounded-lg transform rotate-45"></div>
-                <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-                <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
-                <div className="w-32 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full"></div>
-                <div className="w-8 h-8 bg-indigo-500 rounded-lg transform rotate-45"></div>
+            <div className="relative w-80 h-60">
+              {/* Dark background */}
+              <div className="w-full h-full bg-gray-800 rounded-3xl relative overflow-hidden">
+                {/* Dotted pattern */}
+                <div className="absolute inset-0 opacity-20">
+                  <div className="grid grid-cols-12 gap-2 p-6 h-full">
+                    {Array.from({ length: 120 }).map((_, i) => (
+                      <div key={i} className="w-1 h-1 bg-gray-400 rounded-full"></div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Blue geometric shape */}
+                <div className="absolute bottom-0 right-0 w-32 h-24 bg-blue-600 transform -rotate-12 rounded-2xl"></div>
+                
+                {/* White text card */}
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl px-6 py-4 shadow-lg">
+                  <span className="text-gray-800 font-semibold">About Us</span>
+                </div>
               </div>
             </div>
           </div>

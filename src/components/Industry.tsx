@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Heart, Building2, Factory, Zap, TrendingUp, Shield } from "lucide-react";
 
@@ -26,6 +25,31 @@ const Industry = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">
             Industry
           </h2>
+          
+          {/* Exact recreation of industry graphic */}
+          <div className="flex justify-center mb-16">
+            <div className="relative w-96 h-80">
+              {/* Light background */}
+              <div className="w-full h-full bg-gray-100 rounded-3xl relative overflow-hidden">
+                {/* Light dotted pattern */}
+                <div className="absolute inset-0 opacity-30">
+                  <div className="grid grid-cols-16 gap-1 p-6 h-full">
+                    {Array.from({ length: 256 }).map((_, i) => (
+                      <div key={i} className="w-0.5 h-0.5 bg-gray-400 rounded-full"></div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Blue geometric element */}
+                <div className="absolute top-4 right-4 w-24 h-20 bg-blue-600 transform rotate-45 rounded-lg"></div>
+                
+                {/* Industry text card */}
+                <div className="absolute bottom-8 left-8 bg-white rounded-full px-8 py-4 shadow-lg border border-gray-200">
+                  <span className="text-gray-800 font-semibold text-lg">Industry</span>
+                </div>
+              </div>
+            </div>
+          </div>
           
           {/* Modern industry visualization */}
           <div className="mb-16">

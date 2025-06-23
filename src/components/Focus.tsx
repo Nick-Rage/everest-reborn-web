@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Target, Rocket, Building } from "lucide-react";
 
@@ -18,6 +17,32 @@ const Focus = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
               Focus
             </h2>
+            
+            {/* Exact recreation of focus graphic */}
+            <div className="flex justify-center mb-8">
+              <div className="relative w-72 h-56">
+                {/* Beige/tan background */}
+                <div className="w-full h-full bg-amber-100 rounded-3xl relative overflow-hidden">
+                  {/* Grid pattern */}
+                  <div className="absolute inset-0 opacity-25">
+                    <div className="grid grid-cols-8 gap-4 p-6 h-full">
+                      {Array.from({ length: 64 }).map((_, i) => (
+                        <div key={i} className="w-1 h-1 bg-amber-600 rounded-full"></div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Green geometric element */}
+                  <div className="absolute bottom-2 right-2 w-28 h-20 bg-green-600 transform rotate-6 rounded-2xl"></div>
+                  
+                  {/* Focus text card */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl px-6 py-3 shadow-lg">
+                    <span className="text-gray-800 font-semibold">Focus</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               We partner with founders and domain experts to build and scale enterprise AI ventures to transform industries
             </p>

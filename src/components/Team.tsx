@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Users, Briefcase, Code, TrendingUp } from "lucide-react";
 
@@ -24,6 +23,31 @@ const Team = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
             Team
           </h2>
+          
+          {/* Exact recreation of team graphic */}
+          <div className="flex justify-center mb-12">
+            <div className="relative w-80 h-64">
+              {/* Light gray background */}
+              <div className="w-full h-full bg-gray-200 rounded-3xl relative overflow-hidden">
+                {/* Subtle pattern */}
+                <div className="absolute inset-0 opacity-20">
+                  <div className="grid grid-cols-10 gap-3 p-6 h-full">
+                    {Array.from({ length: 80 }).map((_, i) => (
+                      <div key={i} className="w-1 h-1 bg-gray-500 rounded-full"></div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Purple geometric element */}
+                <div className="absolute top-6 left-6 w-20 h-16 bg-purple-600 transform -rotate-12 rounded-xl"></div>
+                
+                {/* Team text card */}
+                <div className="absolute bottom-6 right-6 bg-white rounded-full px-6 py-3 shadow-lg">
+                  <span className="text-gray-800 font-semibold">Team</span>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <div className="space-y-6 text-xl text-gray-600 leading-relaxed mb-12">
             <p>
