@@ -5,22 +5,31 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-slate-900 text-white">
+    <section 
+      id="contact" 
+      className="py-24 relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.95), rgba(30, 41, 59, 0.95)), url('/lovable-uploads/f5f1f920-1c8e-42ab-bee1-f7a769c22dd6.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
             Contact
           </h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h3 className="text-3xl font-bold mb-8">
-                Let's Build the 
-                <span className="text-blue-400"> Future Together</span>
+              <h3 className="text-3xl font-bold text-white mb-8">
+                Join us in 
+                <span className="text-blue-400"> reimagining your industry with AI</span>
               </h3>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Ready to scale your innovative company? We'd love to hear from you. 
+                Want to learn more or invest in our pipeline? Ready to scale your innovative company? We'd love to hear from you. 
                 Reach out to discuss how we can partner together.
               </p>
               
@@ -30,7 +39,7 @@ const Contact = () => {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <div className="font-semibold">Email Us</div>
+                    <div className="font-semibold text-white">Email Us</div>
                     <div className="text-gray-300">hello@everestvc.ai</div>
                   </div>
                 </div>
@@ -40,7 +49,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <div className="font-semibold">Call Us</div>
+                    <div className="font-semibold text-white">Call Us</div>
                     <div className="text-gray-300">+1 (555) 123-4567</div>
                   </div>
                 </div>
@@ -50,7 +59,7 @@ const Contact = () => {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <div className="font-semibold">Visit Us</div>
+                    <div className="font-semibold text-white">Visit Us</div>
                     <div className="text-gray-300">San Francisco, CA</div>
                   </div>
                 </div>
@@ -60,7 +69,7 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="bg-white text-slate-900">
               <CardContent className="p-8">
-                <h4 className="text-2xl font-bold mb-6">Get in Touch</h4>
+                <h4 className="text-2xl font-bold mb-6">Build with us</h4>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>

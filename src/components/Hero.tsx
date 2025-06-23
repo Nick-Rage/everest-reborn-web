@@ -15,29 +15,32 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative pt-20 pb-32 bg-gradient-to-br from-blue-50 to-indigo-100 overflow-hidden">
-      {/* Background geometric shapes */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 -left-20 w-80 h-80 bg-gradient-to-br from-blue-600 to-purple-600 transform rotate-45 rounded-3xl opacity-10"></div>
-        <div className="absolute bottom-20 -right-20 w-96 h-96 bg-gradient-to-br from-indigo-500 to-blue-700 transform -rotate-45 rounded-3xl opacity-10"></div>
-      </div>
-      
+    <section 
+      className="relative pt-20 pb-32 overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('/lovable-uploads/0b0d02be-a3d5-4cce-a39a-7510103757b0.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content - Modern Geometric Design */}
+            {/* Left Content - AI/AGI Visual */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
-                {/* Main geometric composition */}
+                {/* Modern AI/AGI composition inspired by the uploaded design */}
                 <div className="relative w-80 h-80">
                   {/* Background geometric shapes */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 transform rotate-12 rounded-3xl opacity-20"></div>
                   <div className="absolute top-8 left-8 w-64 h-64 bg-gradient-to-br from-indigo-500 to-blue-700 transform -rotate-6 rounded-2xl"></div>
                   
-                  {/* Central AI/AGI circle */}
+                  {/* Central AI circle with unstoppable intelligence theme */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-full shadow-lg flex items-center justify-center">
                     <div className="text-center">
                       <TrendingUp className="w-8 h-8 text-blue-600 mx-auto mb-1" />
+                      <div className="text-xs font-bold text-gray-700">AI</div>
                       <div className="text-xs font-bold text-gray-700">AGI</div>
                     </div>
                   </div>
@@ -49,7 +52,7 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Right Content - Links and Main Content */}
+            {/* Right Content - Main Content */}
             <div>
               <div className="flex justify-end gap-6 mb-12">
                 <a 
@@ -78,18 +81,10 @@ const Hero = () => {
                 </h2>
                 
                 <div className="mb-8">
-                  <div className="text-xl text-gray-600 mb-4">AI & AGI Ecosystem</div>
+                  <div className="text-xl text-gray-600 mb-4">w/ unstoppable intelligence</div>
                   <div className="relative w-full h-32 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg overflow-hidden">
-                    {/* Geometric pattern background */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="relative">
-                        <div className="w-20 h-20 bg-blue-600 transform rotate-45 rounded-lg opacity-20"></div>
-                        <div className="absolute top-2 left-2 w-16 h-16 bg-indigo-500 transform -rotate-12 rounded-lg opacity-30"></div>
-                        <div className="absolute top-4 left-4 w-12 h-12 bg-purple-500 transform rotate-6 rounded-lg opacity-40"></div>
-                      </div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-gray-700 font-semibold">Intelligence Convergence</span>
+                      <span className="text-gray-700 font-semibold">AI & AGI Ecosystem</span>
                     </div>
                   </div>
                 </div>
