@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Lightbulb, Rocket, Users } from "lucide-react";
 
 const About = () => {
   const scrollToNext = () => {
@@ -10,27 +11,51 @@ const About = () => {
   };
 
   return (
-    <section 
-      id="about" 
-      className="py-24 relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.9)), url('/lovable-uploads/84170f83-a8ee-4d95-bfb2-4fa1ae61f1ee.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section id="about" className="py-24 bg-slate-900 relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             About Us
           </h2>
           
-          {/* Visual separator with geometric design */}
+          {/* Modern visual separator */}
           <div className="flex justify-center mb-12">
             <div className="relative">
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
-              <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-400 rounded-full"></div>
+              {/* Modern geometric separator */}
+              <div className="flex items-center gap-4">
+                <div className="w-8 h-8 bg-blue-500 rounded-lg transform rotate-45"></div>
+                <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
+                <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
+                <div className="w-32 h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full"></div>
+                <div className="w-8 h-8 bg-indigo-500 rounded-lg transform rotate-45"></div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Visual cards for key concepts */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+              <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Lightbulb className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Vision</h3>
+              <p className="text-gray-300 text-sm">Redefining what's possible through fierce innovation</p>
+            </div>
+            
+            <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+              <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Rocket className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Revolution</h3>
+              <p className="text-gray-300 text-sm">Crossing from scarcity to abundance</p>
+            </div>
+            
+            <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+              <div className="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Convergence</h3>
+              <p className="text-gray-300 text-sm">Human creativity meets machine intelligence</p>
             </div>
           </div>
           

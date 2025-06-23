@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { TrendingUp } from "lucide-react";
+import { TrendingUp, Brain, Zap, Target } from "lucide-react";
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -15,39 +15,46 @@ const Hero = () => {
   };
 
   return (
-    <section 
-      className="relative pt-20 pb-32 overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('/lovable-uploads/0b0d02be-a3d5-4cce-a39a-7510103757b0.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section className="relative pt-20 pb-32 overflow-hidden bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content - AI/AGI Visual */}
+            {/* Left Content - Modern AI/AGI Visual */}
             <div className="flex justify-center lg:justify-start">
-              <div className="relative">
-                {/* Modern AI/AGI composition inspired by the uploaded design */}
-                <div className="relative w-80 h-80">
-                  {/* Background geometric shapes */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 transform rotate-12 rounded-3xl opacity-20"></div>
-                  <div className="absolute top-8 left-8 w-64 h-64 bg-gradient-to-br from-indigo-500 to-blue-700 transform -rotate-6 rounded-2xl"></div>
+              <div className="relative w-96 h-96">
+                {/* Background grid pattern */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="grid grid-cols-8 gap-2 h-full">
+                    {Array.from({ length: 64 }).map((_, i) => (
+                      <div key={i} className="bg-blue-600 rounded-sm"></div>
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Main geometric composition */}
+                <div className="absolute inset-0">
+                  {/* Large blue rectangle */}
+                  <div className="absolute top-8 left-8 w-48 h-32 bg-blue-600 rounded-xl shadow-lg"></div>
                   
-                  {/* Central AI circle with unstoppable intelligence theme */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-white rounded-full shadow-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <TrendingUp className="w-8 h-8 text-blue-600 mx-auto mb-1" />
-                      <div className="text-xs font-bold text-gray-700">AI</div>
-                      <div className="text-xs font-bold text-gray-700">AGI</div>
-                    </div>
+                  {/* Smaller overlapping shapes */}
+                  <div className="absolute top-16 right-8 w-32 h-32 bg-indigo-500 rounded-2xl shadow-md transform rotate-12"></div>
+                  <div className="absolute bottom-16 left-16 w-24 h-24 bg-purple-500 rounded-xl shadow-md transform -rotate-6"></div>
+                  
+                  {/* Central AI hub */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white rounded-full shadow-xl flex items-center justify-center border-4 border-blue-200">
+                    <Brain className="w-8 h-8 text-blue-600" />
                   </div>
                   
-                  {/* Floating elements */}
-                  <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl opacity-80"></div>
-                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-500 rounded-lg opacity-70"></div>
+                  {/* Floating connection nodes */}
+                  <div className="absolute top-12 left-1/2 w-4 h-4 bg-blue-400 rounded-full"></div>
+                  <div className="absolute bottom-12 right-12 w-6 h-6 bg-indigo-400 rounded-full"></div>
+                  <div className="absolute top-1/3 right-4 w-3 h-3 bg-purple-400 rounded-full"></div>
+                  
+                  {/* Connection lines */}
+                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 384 384">
+                    <path d="M50 50 Q200 100 350 150" stroke="#3B82F6" strokeWidth="2" fill="none" opacity="0.3"/>
+                    <path d="M100 300 Q200 200 300 100" stroke="#6366F1" strokeWidth="2" fill="none" opacity="0.3"/>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -82,9 +89,19 @@ const Hero = () => {
                 
                 <div className="mb-8">
                   <div className="text-xl text-gray-600 mb-4">w/ unstoppable intelligence</div>
-                  <div className="relative w-full h-32 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg overflow-hidden">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-gray-700 font-semibold">AI & AGI Ecosystem</span>
+                  {/* Modern card design */}
+                  <div className="relative bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
+                          <Zap className="w-6 h-6 text-white" />
+                        </div>
+                        <div>
+                          <div className="font-semibold text-gray-900">AI & AGI Ecosystem</div>
+                          <div className="text-sm text-gray-500">Intelligent Solutions</div>
+                        </div>
+                      </div>
+                      <Target className="w-6 h-6 text-blue-500" />
                     </div>
                   </div>
                 </div>

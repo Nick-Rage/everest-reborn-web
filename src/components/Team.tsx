@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Users, Briefcase, Code, TrendingUp } from "lucide-react";
 
 const Team = () => {
   const scrollToNext = () => {
@@ -9,17 +10,15 @@ const Team = () => {
     }
   };
 
+  const teamRoles = [
+    { title: "Builders", icon: Code, count: "15+", color: "bg-blue-500" },
+    { title: "Entrepreneurs", icon: TrendingUp, count: "8+", color: "bg-green-500" },
+    { title: "Executives", icon: Briefcase, count: "12+", color: "bg-purple-500" },
+    { title: "Investors", icon: Users, count: "6+", color: "bg-indigo-500" },
+  ];
+
   return (
-    <section 
-      id="team" 
-      className="py-24 relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(239, 246, 255, 0.95), rgba(239, 246, 255, 0.95)), url('/lovable-uploads/ec206b6d-0e8f-467d-911f-e2a34b57eb2d.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section id="team" className="py-24 bg-gradient-to-br from-blue-50 to-slate-50 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
@@ -38,11 +37,33 @@ const Team = () => {
           
           {/* Team composition visual */}
           <div className="mb-12">
-            <img
-              src="/lovable-uploads/b2f62804-4c9c-4ea8-bac2-16ed34a926ab.png"
-              alt="Our Team"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
-            />
+            <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Our Expert Team</h3>
+              
+              {/* Team stats grid */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {teamRoles.map((role, index) => (
+                  <div key={index} className="text-center">
+                    <div className={`w-16 h-16 ${role.color} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                      <role.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="text-3xl font-bold text-gray-900 mb-2">{role.count}</div>
+                    <div className="text-gray-600 font-medium">{role.title}</div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Connection visualization */}
+              <div className="mt-8 flex justify-center">
+                <div className="flex items-center gap-4">
+                  <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                  <div className="w-4 h-4 bg-purple-400 rounded-full"></div>
+                  <div className="w-16 h-1 bg-gradient-to-r from-purple-400 to-green-400 rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
           </div>
           
           <Button 

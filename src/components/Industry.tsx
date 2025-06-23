@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { Heart, Building2, Factory, Zap, TrendingUp, Shield } from "lucide-react";
 
 const Industry = () => {
   const scrollToNext = () => {
@@ -9,30 +10,48 @@ const Industry = () => {
     }
   };
 
+  const industries = [
+    { name: "Healthcare", icon: Heart, color: "bg-red-500" },
+    { name: "Finance", icon: TrendingUp, color: "bg-green-500" },
+    { name: "Manufacturing", icon: Factory, color: "bg-blue-500" },
+    { name: "Energy", icon: Zap, color: "bg-yellow-500" },
+    { name: "Real Estate", icon: Building2, color: "bg-purple-500" },
+    { name: "Security", icon: Shield, color: "bg-indigo-500" },
+  ];
+
   return (
-    <section 
-      id="industry" 
-      className="py-24 relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('/lovable-uploads/72f76314-50c6-4034-9ea0-1a0f80cff8c6.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <section id="industry" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">
             Industry
           </h2>
           
-          {/* Use the industry strip image */}
+          {/* Modern industry visualization */}
           <div className="mb-16">
-            <img
-              src="/lovable-uploads/927907b3-c391-4b69-8c49-1bb7688815af.png"
-              alt="Industry Applications"
-              className="w-full rounded-lg shadow-lg"
-            />
+            <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-8 border border-gray-100">
+              {/* Industry grid */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+                {industries.map((industry, index) => (
+                  <div key={index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div className={`w-12 h-12 ${industry.color} rounded-xl flex items-center justify-center mb-4`}>
+                      <industry.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-gray-900">{industry.name}</h3>
+                    <div className="w-full bg-gray-200 rounded-full h-2 mt-3">
+                      <div className={`${industry.color} h-2 rounded-full`} style={{width: `${60 + (index * 8)}%`}}></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Central connection hub */}
+              <div className="flex justify-center">
+                <div className="bg-blue-600 rounded-2xl px-8 py-4 text-white font-semibold shadow-lg">
+                  AI-Powered Transformation
+                </div>
+              </div>
+            </div>
           </div>
           
           <div className="text-center mb-8">
