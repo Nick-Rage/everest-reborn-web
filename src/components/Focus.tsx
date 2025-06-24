@@ -11,86 +11,14 @@ const Focus = () => {
 
   return (
     <section id="focus" className="py-24 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden">
-      {/* Main diagram recreating the uploaded focus image */}
-      <div className="absolute right-8 top-16 w-1/2 h-96">
-        {/* Central diamond pattern with labels */}
-        <div className="relative w-full h-full">
-          {/* Domain section - dark navy */}
-          <div className="absolute left-0 top-0 w-48 h-48 bg-slate-800 transform rotate-45 rounded-3xl flex items-center justify-center">
-            <span className="text-white font-bold text-lg transform -rotate-45">Domain</span>
-          </div>
-          
-          {/* Technology section - blue */}
-          <div className="absolute left-32 top-0 w-48 h-48 bg-blue-600 transform rotate-45 rounded-3xl flex items-center justify-center">
-            <span className="text-white font-bold text-lg transform -rotate-45">Technology</span>
-          </div>
-          
-          {/* Asset section - light blue */}
-          <div className="absolute left-64 top-32 w-48 h-48 bg-blue-400 transform rotate-45 rounded-3xl flex items-center justify-center">
-            <span className="text-white font-bold text-lg transform -rotate-45">Asset</span>
-          </div>
-          
-          {/* Capital section - cyan */}
-          <div className="absolute left-32 top-64 w-48 h-48 bg-cyan-400 transform rotate-45 rounded-3xl flex items-center justify-center">
-            <span className="text-slate-800 font-bold text-lg transform -rotate-45">Capital</span>
-          </div>
-          
-          {/* Central circular hub */}
-          <div className="absolute left-40 top-32 w-32 h-32 bg-slate-900 rounded-full flex items-center justify-center z-10">
-            <div className="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center">
-              <span className="text-slate-900 font-bold text-sm">IA</span>
-            </div>
-          </div>
-          
-          {/* Connection lines to AI capabilities */}
-          <div className="absolute right-0 top-16">
-            <div className="space-y-8">
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <div className="w-16 h-0.5 bg-blue-600 border-dashed border-t-2"></div>
-                <div className="bg-white rounded-lg p-3 shadow-lg">
-                  <span className="text-sm font-semibold">AI assistant</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <div className="w-16 h-0.5 bg-blue-600 border-dashed border-t-2"></div>
-                <div className="bg-white rounded-lg p-3 shadow-lg">
-                  <span className="text-sm font-semibold">Artificial general intelligence</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <div className="w-16 h-0.5 bg-blue-600 border-dashed border-t-2"></div>
-                <div className="bg-white rounded-lg p-3 shadow-lg">
-                  <span className="text-sm font-semibold">AI team mate</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <div className="w-16 h-0.5 bg-blue-600 border-dashed border-t-2"></div>
-                <div className="bg-white rounded-lg p-3 shadow-lg">
-                  <span className="text-sm font-semibold">Super intelligence</span>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <div className="w-16 h-0.5 bg-blue-600 border-dashed border-t-2"></div>
-                <div className="bg-white rounded-lg p-3 shadow-lg">
-                  <span className="text-sm font-semibold">AI copilot</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Geometric background shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 transform rotate-45 opacity-20 -translate-x-48 -translate-y-48"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-cyan-400 transform -rotate-12 opacity-30 translate-x-32 translate-y-32"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-gray-900 mb-12">
               We partner with founders and domain experts to build and scale enterprise AI ventures to transform industries
@@ -123,10 +51,14 @@ const Focus = () => {
             </div>
           </div>
           
-          <div className="text-center">
-            <h3 className="text-3xl font-bold text-gray-900 mb-8">
-              CO-FOUND WITH EVEREST AND BUILD THE NEXT GREAT VENTURE
-            </h3>
+          {/* Bottom geometric accent with large blue diamond */}
+          <div className="relative text-center">
+            <div className="absolute right-0 bottom-0 w-48 h-48 bg-slate-900 transform rotate-45"></div>
+            <div className="relative z-10 mb-8">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                CO-FOUND WITH EVEREST AND BUILD THE NEXT GREAT VENTURE
+              </h3>
+            </div>
             
             <Button 
               size="lg" 

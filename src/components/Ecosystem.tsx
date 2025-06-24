@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Brain, Users, Layers, Mountain, MessageCircle, Settings, Cpu, Target, Zap } from "lucide-react";
+import { Brain, Users, Layers, Mountain, MessageCircle, Settings, Cpu } from "lucide-react";
 
 const Ecosystem = () => {
   const scrollToNext = () => {
@@ -12,31 +12,7 @@ const Ecosystem = () => {
 
   return (
     <section id="ecosystem" className="py-24 bg-gray-100 relative overflow-hidden">
-      {/* AI/AGI flowing design elements matching uploaded images */}
-      <div className="absolute top-0 left-0 w-full h-32">
-        <div className="relative w-full h-full bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-400 overflow-hidden">
-          {/* AI badge on the left */}
-          <div className="absolute left-16 top-1/2 transform -translate-y-1/2 bg-slate-900 rounded-full px-6 py-3 flex items-center gap-3">
-            <Target className="w-5 h-5 text-white" />
-            <span className="text-white font-bold text-lg">AI</span>
-          </div>
-          
-          {/* Central flowing element */}
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-white rounded-full flex items-center justify-center">
-            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
-              <Brain className="w-8 h-8 text-white" />
-            </div>
-          </div>
-          
-          {/* AGI badge on the right */}
-          <div className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-slate-900 rounded-full px-6 py-3 flex items-center gap-3">
-            <Zap className="w-5 h-5 text-white" />
-            <span className="text-white font-bold text-lg">AGI</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10 pt-16">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left side - Geometric design with "Build with us" */}

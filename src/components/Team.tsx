@@ -10,11 +10,6 @@ const Team = () => {
     }
   };
 
-  // Simulating the uploaded team photo grid
-  const teamPhotos = [
-    '/lovable-uploads/3d14f865-2429-42e3-bca4-6f5863be4b96.png',
-  ];
-
   return (
     <section id="team" className="py-24 bg-gradient-to-br from-blue-50 to-cyan-50 relative overflow-hidden">
       <div className="container mx-auto px-6">
@@ -23,45 +18,43 @@ const Team = () => {
             Looking for your next big thing? Or start your next innings?
           </h2>
           
-          {/* Team member grid recreating the uploaded image layout */}
-          <div className="relative mb-16 bg-white rounded-3xl p-8 shadow-lg">
-            <div className="grid grid-cols-7 gap-4 mb-6">
-              {/* Top row - professional photos */}
+          {/* Team member grid with circular photos */}
+          <div className="relative mb-16">
+            <div className="grid grid-cols-7 gap-4 mb-8">
+              {/* Top row */}
               {Array.from({ length: 7 }).map((_, i) => (
-                <div key={i} className="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-b from-transparent to-blue-900 opacity-60"></div>
-                </div>
+                <div key={i} className="w-16 h-16 bg-gray-300 rounded-2xl"></div>
               ))}
             </div>
             <div className="grid grid-cols-7 gap-4">
-              {/* Bottom row - professional photos */}
+              {/* Bottom row */}
               {Array.from({ length: 7 }).map((_, i) => (
-                <div key={i} className="aspect-square bg-gradient-to-br from-gray-100 to-gray-300 rounded-xl overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-b from-transparent to-gray-700 opacity-60"></div>
-                </div>
+                <div key={i} className="w-16 h-16 bg-gray-400 rounded-2xl"></div>
               ))}
             </div>
             
-            {/* AI badge overlay matching uploaded design */}
-            <div className="absolute left-8 top-8 bg-blue-600 rounded-full px-6 py-3 flex items-center gap-3">
-              <Target className="w-5 h-5 text-white" />
-              <span className="text-white font-bold text-lg">AI</span>
+            {/* AI/AGI circular element overlay */}
+            <div className="absolute left-8 top-8 w-32 h-32 bg-blue-600 rounded-full opacity-80 flex items-center justify-center">
+              <Brain className="w-8 h-8 text-white" />
+            </div>
+            
+            {/* AI badge */}
+            <div className="absolute left-4 top-4 bg-slate-900 rounded-full px-3 py-1">
+              <div className="flex items-center gap-1">
+                <Target className="w-3 h-3 text-white" />
+                <span className="text-white font-semibold text-sm">AI</span>
+              </div>
             </div>
             
             {/* AGI badge */}
-            <div className="absolute left-12 bottom-8 bg-purple-600 rounded-full px-6 py-3">
-              <span className="text-white font-bold text-lg">AGI</span>
-            </div>
-            
-            {/* Central brain element */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-slate-900 rounded-full flex items-center justify-center opacity-80">
-              <Brain className="w-8 h-8 text-blue-400" />
+            <div className="absolute left-12 bottom-4 bg-slate-900 rounded-full px-3 py-1">
+              <span className="text-white font-semibold text-sm">AGI</span>
             </div>
           </div>
           
           <Button 
             size="lg"
-            className="bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 px-12 py-6 text-lg rounded-full font-semibold mb-16"
+            className="bg-white text-gray-900 border-2 border-gray-300 hover:bg-gray-50 px-12 py-6 text-lg rounded-full font-semibold"
           >
             Build with us
           </Button>
