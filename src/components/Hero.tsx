@@ -15,26 +15,33 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gray-100">
-      {/* Diagonal geometric shapes */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-white transform -skew-x-12"></div>
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-200 transform skew-x-12"></div>
-        <div className="absolute top-20 right-20 w-64 h-32 bg-blue-600 transform rotate-45"></div>
+    <section className="relative min-h-screen overflow-hidden bg-gray-50">
+      {/* Main geometric design matching the uploaded diamond pattern */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative w-96 h-96">
+          {/* Large blue diamond */}
+          <div className="absolute top-0 left-16 w-64 h-64 bg-blue-600 transform rotate-45 rounded-3xl"></div>
+          {/* Medium cyan diamond overlapping */}
+          <div className="absolute top-12 right-0 w-48 h-48 bg-cyan-400 transform rotate-45 rounded-2xl opacity-90"></div>
+          {/* Small light blue diamond */}
+          <div className="absolute bottom-8 left-8 w-32 h-32 bg-blue-300 transform rotate-45 rounded-xl opacity-80"></div>
+          {/* Dark navy diamond */}
+          <div className="absolute bottom-0 right-16 w-40 h-40 bg-slate-800 transform rotate-45 rounded-2xl"></div>
+        </div>
       </div>
 
       {/* Navigation */}
       <nav className="relative z-20 flex justify-between items-center p-6">
-        <div className="text-2xl font-bold text-gray-900 underline">
+        <div className="text-2xl font-bold text-gray-900">
           Everest AI Ventures
         </div>
         <div className="flex items-center gap-8">
-          <a href="https://ariagen.ai/" className="text-gray-700 underline">Aria AI</a>
-          <a href="#" className="text-gray-700 underline">Basecamp</a>
-          <a href="#" className="text-gray-700 underline">Advisory</a>
+          <a href="https://ariagen.ai/" className="text-gray-700 hover:text-blue-600">Aria AI</a>
+          <a href="#" className="text-gray-700 hover:text-blue-600">Basecamp</a>
+          <a href="#" className="text-gray-700 hover:text-blue-600">Advisory</a>
           <Button 
             onClick={scrollToBottom}
-            className="bg-slate-900 text-white px-6 py-2 rounded-none"
+            className="bg-slate-900 text-white px-6 py-2 rounded-full"
           >
             Join Us
           </Button>
@@ -57,31 +64,22 @@ const Hero = () => {
                   Reimagining industries
                 </h2>
                 
-                {/* AI/AGI circular element */}
+                {/* AI/AGI element matching the uploaded design */}
                 <div className="relative w-80 h-32 mb-8">
-                  <div className="absolute left-0 top-0 w-32 h-32 bg-blue-600 rounded-full opacity-80"></div>
-                  <div className="absolute left-8 top-2 w-28 h-28 bg-blue-500 rounded-full opacity-90 flex items-center justify-center">
-                    <Brain className="w-8 h-8 text-white" />
-                  </div>
-                  
-                  {/* AI badge */}
-                  <div className="absolute left-0 top-0 bg-slate-900 rounded-full px-3 py-1">
-                    <div className="flex items-center gap-1">
-                      <Target className="w-3 h-3 text-white" />
+                  <div className="absolute left-0 top-0 w-64 h-20 bg-blue-600 rounded-full opacity-80 flex items-center px-6">
+                    <div className="bg-slate-900 rounded-full px-4 py-2 flex items-center gap-2">
+                      <Target className="w-4 h-4 text-white" />
                       <span className="text-white font-semibold text-sm">AI</span>
                     </div>
+                    <span className="text-white font-bold text-lg ml-4">Artificial Intelligence</span>
                   </div>
                   
-                  {/* AGI badge */}
-                  <div className="absolute left-4 bottom-0 bg-slate-900 rounded-full px-3 py-1">
-                    <div className="flex items-center gap-1">
-                      <Zap className="w-3 h-3 text-white" />
+                  <div className="absolute left-16 bottom-0 w-64 h-20 bg-purple-600 rounded-full opacity-80 flex items-center px-6">
+                    <div className="bg-slate-900 rounded-full px-4 py-2 flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-white" />
                       <span className="text-white font-semibold text-sm">AGI</span>
                     </div>
-                  </div>
-                  
-                  <div className="absolute left-40 top-8 text-3xl font-bold text-gray-900">
-                    w/ unstoppable <span className="font-light italic">intelligence</span>
+                    <span className="text-white font-bold text-lg ml-4">Artificial General Intelligence</span>
                   </div>
                 </div>
               </div>
@@ -99,11 +97,8 @@ const Hero = () => {
               </Button>
             </div>
             
-            {/* Right side - geometric shapes */}
-            <div className="relative h-96">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 transform rotate-45 opacity-20"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-purple-600 transform -rotate-12 opacity-30"></div>
-            </div>
+            {/* Right side - empty to let background show */}
+            <div className="relative h-96"></div>
           </div>
         </div>
       </div>

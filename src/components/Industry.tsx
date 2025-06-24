@@ -13,7 +13,60 @@ const Industry = () => {
     <section id="industry" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Industry cards with photos */}
+          {/* Industry showcase strip matching uploaded image */}
+          <div className="mb-16 bg-gradient-to-r from-blue-50 to-white rounded-3xl p-8">
+            <div className="grid grid-cols-6 gap-4 h-32">
+              {/* Automotive/Manufacturing */}
+              <div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center">
+                <div className="text-white font-bold text-center">
+                  <div className="w-8 h-8 bg-white rounded-full mx-auto mb-2 opacity-80"></div>
+                  <div className="text-xs">AUTO</div>
+                </div>
+              </div>
+              
+              {/* Healthcare */}
+              <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center">
+                <div className="text-white font-bold text-center">
+                  <div className="w-8 h-8 bg-white rounded-lg mx-auto mb-2 opacity-80"></div>
+                  <div className="text-xs">HEALTH</div>
+                </div>
+              </div>
+              
+              {/* Medical/Robotics */}
+              <div className="bg-gradient-to-br from-gray-400 to-gray-600 rounded-2xl flex items-center justify-center">
+                <div className="text-white font-bold text-center">
+                  <div className="w-8 h-6 bg-white rounded-full mx-auto mb-2 opacity-80"></div>
+                  <div className="text-xs">MEDICAL</div>
+                </div>
+              </div>
+              
+              {/* Healthcare Tech */}
+              <div className="bg-gradient-to-br from-teal-400 to-teal-600 rounded-2xl flex items-center justify-center">
+                <div className="text-white font-bold text-center">
+                  <div className="w-6 h-8 bg-white rounded-lg mx-auto mb-2 opacity-80"></div>
+                  <div className="text-xs">TECH</div>
+                </div>
+              </div>
+              
+              {/* Logistics */}
+              <div className="bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center">
+                <div className="text-white font-bold text-center">
+                  <div className="w-8 h-4 bg-white rounded-lg mx-auto mb-2 opacity-80"></div>
+                  <div className="text-xs">LOGISTICS</div>
+                </div>
+              </div>
+              
+              {/* AI/Robotics */}
+              <div className="bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center">
+                <div className="text-white font-bold text-center">
+                  <div className="w-6 h-8 bg-white rounded-full mx-auto mb-2 opacity-80"></div>
+                  <div className="text-xs">AI</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Traditional industry cards */}
           <div className="grid grid-cols-4 gap-4 mb-16">
             {/* Healthcare */}
             <div className="relative rounded-3xl overflow-hidden h-64 bg-blue-100">
@@ -21,7 +74,6 @@ const Industry = () => {
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">HEALTHCARE</h3>
               </div>
-              {/* Geometric overlay representing medical professional */}
               <div className="absolute top-4 left-4 w-12 h-16 bg-white opacity-30 rounded-lg"></div>
             </div>
             
@@ -31,7 +83,6 @@ const Industry = () => {
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">FINANCIAL SERVICES</h3>
               </div>
-              {/* Chart pattern overlay */}
               <div className="absolute top-4 right-4 w-16 h-8 border-2 border-white opacity-50"></div>
             </div>
             
@@ -41,7 +92,6 @@ const Industry = () => {
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">AUTOMOTIVE</h3>
               </div>
-              {/* Digital pattern overlay */}
               <div className="absolute inset-4 grid grid-cols-4 gap-1 opacity-30">
                 {Array.from({ length: 16 }).map((_, i) => (
                   <div key={i} className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
@@ -55,12 +105,10 @@ const Industry = () => {
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">CONSTRUCTION</h3>
               </div>
-              {/* Construction worker representation */}
               <div className="absolute top-4 right-4 w-8 h-12 bg-white opacity-40 rounded-t-full"></div>
             </div>
           </div>
           
-          {/* Geometric accent with blue diamond */}
           <div className="relative mb-16">
             <div className="absolute right-16 top-0 w-48 h-48 bg-blue-600 transform rotate-45"></div>
             <div className="relative z-10 text-center pt-24">
