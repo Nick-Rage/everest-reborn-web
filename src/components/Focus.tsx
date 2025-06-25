@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const Focus = () => {
   const scrollToNext = () => {
-    const getStartedSection = document.getElementById('get-started');
-    if (getStartedSection) {
-      getStartedSection.scrollIntoView({ behavior: 'smooth' });
+    const basecampSection = document.getElementById('basecamp');
+    if (basecampSection) {
+      basecampSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -51,10 +51,19 @@ const Focus = () => {
             </div>
           </div>
           
-          {/* Bottom geometric accent with large blue diamond */}
+          {/* Focus diagram using uploaded image */}
+          <div className="relative text-center mb-16">
+            <img 
+              src="/lovable-uploads/23dd8357-fe8e-4a9d-a472-ad2d639cacfe.png" 
+              alt="Focus diagram showing Technology, Domain, Asset, Capital connections to AI applications" 
+              className="w-full h-auto max-w-4xl mx-auto"
+            />
+          </div>
+          
+          {/* Bottom geometric accent with large navy diamond */}
           <div className="relative text-center">
-            <div className="absolute right-0 bottom-0 w-48 h-48 bg-slate-900 transform rotate-45"></div>
-            <div className="relative z-10 mb-8">
+            <div className="absolute right-0 bottom-0 w-48 h-48 bg-slate-900 transform rotate-45 nav-diamond"></div>
+            <div className="relative z-10 mb-8 co-found-text">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 CO-FOUND WITH EVEREST AND BUILD THE NEXT GREAT VENTURE
               </h3>

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -100,4 +101,16 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom styling for visual layering */
+.nav-diamond { 
+  z-index: 0; 
+  opacity: 0.3; 
+  position: absolute; 
+}
+
+.co-found-text { 
+  z-index: 1; 
+  position: relative; 
 }

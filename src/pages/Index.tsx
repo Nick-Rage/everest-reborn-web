@@ -6,6 +6,7 @@ import Industry from "@/components/Industry";
 import Team from "@/components/Team";
 import Ecosystem from "@/components/Ecosystem";
 import Focus from "@/components/Focus";
+import Basecamp from "@/components/Basecamp";
 import GetStarted from "@/components/GetStarted";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ const Index = () => {
       <Team />
       <Ecosystem />
       <Focus />
+      <Basecamp />
       <GetStarted />
       <Contact />
       <Footer />

@@ -20,7 +20,6 @@ const Hero = () => {
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-1/2 h-full bg-white transform -skew-x-12"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-200 transform skew-x-12"></div>
-        <div className="absolute top-20 right-20 w-64 h-32 bg-blue-600 transform rotate-45"></div>
       </div>
 
       {/* Navigation */}
@@ -57,33 +56,9 @@ const Hero = () => {
                   Reimagining industries
                 </h2>
                 
-                {/* AI/AGI circular element */}
-                <div className="relative w-80 h-32 mb-8">
-                  <div className="absolute left-0 top-0 w-32 h-32 bg-blue-600 rounded-full opacity-80"></div>
-                  <div className="absolute left-8 top-2 w-28 h-28 bg-blue-500 rounded-full opacity-90 flex items-center justify-center">
-                    <Brain className="w-8 h-8 text-white" />
-                  </div>
-                  
-                  {/* AI badge */}
-                  <div className="absolute left-0 top-0 bg-slate-900 rounded-full px-3 py-1">
-                    <div className="flex items-center gap-1">
-                      <Target className="w-3 h-3 text-white" />
-                      <span className="text-white font-semibold text-sm">AI</span>
-                    </div>
-                  </div>
-                  
-                  {/* AGI badge */}
-                  <div className="absolute left-4 bottom-0 bg-slate-900 rounded-full px-3 py-1">
-                    <div className="flex items-center gap-1">
-                      <Zap className="w-3 h-3 text-white" />
-                      <span className="text-white font-semibold text-sm">AGI</span>
-                    </div>
-                  </div>
-                  
-                  <div className="absolute left-40 top-8 text-3xl font-bold text-gray-900">
-                    w/ unstoppable <span className="font-light italic">intelligence</span>
-                  </div>
-                </div>
+                <p className="text-xl text-gray-700 mb-8">
+                  w/ unstoppable <span className="font-light italic">intelligence</span>
+                </p>
               </div>
               
               <p className="text-xl text-gray-700 mb-8">
@@ -99,10 +74,13 @@ const Hero = () => {
               </Button>
             </div>
             
-            {/* Right side - geometric shapes */}
-            <div className="relative h-96">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 transform rotate-45 opacity-20"></div>
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-purple-600 transform -rotate-12 opacity-30"></div>
+            {/* Right side - AI/AGI graphic using uploaded image */}
+            <div className="relative h-96 flex justify-center items-center">
+              <img 
+                src="/lovable-uploads/9d252b33-35a2-43ca-9814-da49e1c3b4ee.png" 
+                alt="AI to AGI transformation graphic" 
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
           </div>
         </div>

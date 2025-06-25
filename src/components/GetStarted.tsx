@@ -3,10 +3,19 @@ import { Button } from "@/components/ui/button";
 
 const GetStarted = () => {
   return (
-    <section id="get-started" className="py-24 relative overflow-hidden"
-             style={{
-               backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-             }}>
+    <section 
+      id="get-started" 
+      className="py-24 relative overflow-hidden"
+      style={{
+        backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      }}
+    >
+      {/* Video background placeholder for Media3.mp4 */}
+      <div id="MEDIA_PLACEHOLDER_JOIN_US" className="absolute inset-0">
+        <!-- Replace background with Media3.mp4 manually -->
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-blue-900/80"></div>
+      </div>
+      
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-5xl font-bold mb-8">

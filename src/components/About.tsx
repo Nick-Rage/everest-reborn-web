@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Target, Brain, Zap } from "lucide-react";
 
 const About = () => {
   const scrollToNext = () => {
@@ -35,30 +34,12 @@ const About = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left side - Robot/AI visual with circular elements */}
+            {/* Left side - Video placeholder for Media1.mp4 */}
             <div className="flex justify-center">
-              <div className="relative w-96 h-96">
-                {/* Large circular AI element */}
-                <div className="absolute left-8 top-16 w-48 h-48 rounded-full bg-blue-600 opacity-20"></div>
-                <div className="absolute left-12 top-20 w-40 h-40 rounded-full bg-blue-500 opacity-30"></div>
-                <div className="absolute left-16 top-24 w-32 h-32 rounded-full bg-blue-400 opacity-40 flex items-center justify-center">
-                  <Brain className="w-12 h-12 text-white" />
-                </div>
-                
-                {/* AI badge */}
-                <div className="absolute left-0 top-8 bg-slate-800 rounded-full px-4 py-2 border border-blue-400">
-                  <div className="flex items-center gap-2">
-                    <Target className="w-4 h-4 text-blue-400" />
-                    <span className="text-white font-semibold text-sm">AI</span>
-                  </div>
-                </div>
-                
-                {/* AGI badge */}
-                <div className="absolute left-4 bottom-16 bg-slate-800 rounded-full px-4 py-2 border border-purple-400">
-                  <div className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-purple-400" />
-                    <span className="text-white font-semibold text-sm">AGI</span>
-                  </div>
+              <div id="MEDIA_PLACEHOLDER_VISION_1" className="w-96 h-96 bg-slate-800 rounded-lg flex items-center justify-center border-2 border-slate-600">
+                <div className="text-white text-center">
+                  <div className="text-sm mb-2">Media Placeholder</div>
+                  <div className="text-xs text-slate-400">Replace with Media1.mp4</div>
                 </div>
               </div>
             </div>

@@ -13,30 +13,37 @@ const Industry = () => {
     <section id="industry" className="py-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Industry cards with photos */}
+          {/* Industry cards with actual photos */}
           <div className="grid grid-cols-4 gap-4 mb-16">
             {/* Healthcare */}
-            <div className="relative rounded-3xl overflow-hidden h-64 bg-blue-100">
+            <div className="relative rounded-3xl overflow-hidden h-64">
+              <img 
+                src="/lovable-uploads/e2d5877f-070b-4a6f-b2b5-6551beaf528e.png" 
+                alt="Healthcare professional" 
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-900 opacity-80"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">HEALTHCARE</h3>
               </div>
-              {/* Geometric overlay representing medical professional */}
-              <div className="absolute top-4 left-4 w-12 h-16 bg-white opacity-30 rounded-lg"></div>
             </div>
             
             {/* Financial Services */}
-            <div className="relative rounded-3xl overflow-hidden h-64 bg-slate-100">
+            <div className="relative rounded-3xl overflow-hidden h-64">
+              <img 
+                src="/lovable-uploads/cddb053a-40bf-41b7-9089-28f5d0a52e98.png" 
+                alt="Financial services professional" 
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900 opacity-80"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">FINANCIAL SERVICES</h3>
               </div>
-              {/* Chart pattern overlay */}
-              <div className="absolute top-4 right-4 w-16 h-8 border-2 border-white opacity-50"></div>
             </div>
             
             {/* Automotive */}
-            <div className="relative rounded-3xl overflow-hidden h-64 bg-cyan-100">
+            <div id="automotive-box" className="relative rounded-3xl overflow-hidden h-64 bg-cyan-100">
+              <!-- Replace automotive image later -->
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-900 opacity-80"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">AUTOMOTIVE</h3>
@@ -50,13 +57,16 @@ const Industry = () => {
             </div>
             
             {/* Construction */}
-            <div className="relative rounded-3xl overflow-hidden h-64 bg-orange-100">
+            <div className="relative rounded-3xl overflow-hidden h-64">
+              <img 
+                src="/lovable-uploads/cc159ae0-6bc2-4446-b62d-fe729b17850a.png" 
+                alt="Construction professional" 
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-orange-900 opacity-80"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">CONSTRUCTION</h3>
               </div>
-              {/* Construction worker representation */}
-              <div className="absolute top-4 right-4 w-8 h-12 bg-white opacity-40 rounded-t-full"></div>
             </div>
           </div>
           

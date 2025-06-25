@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Target, Brain } from "lucide-react";
 
 const Team = () => {
   const scrollToNext = () => {
@@ -18,38 +17,13 @@ const Team = () => {
             Looking for your next big thing? Or start your next innings?
           </h2>
           
-          {/* Team member grid with circular photos */}
+          {/* Team member grid with actual photos */}
           <div className="relative mb-16">
-            <div className="grid grid-cols-7 gap-4 mb-8">
-              {/* Top row */}
-              {Array.from({ length: 7 }).map((_, i) => (
-                <div key={i} className="w-16 h-16 bg-gray-300 rounded-2xl"></div>
-              ))}
-            </div>
-            <div className="grid grid-cols-7 gap-4">
-              {/* Bottom row */}
-              {Array.from({ length: 7 }).map((_, i) => (
-                <div key={i} className="w-16 h-16 bg-gray-400 rounded-2xl"></div>
-              ))}
-            </div>
-            
-            {/* AI/AGI circular element overlay */}
-            <div className="absolute left-8 top-8 w-32 h-32 bg-blue-600 rounded-full opacity-80 flex items-center justify-center">
-              <Brain className="w-8 h-8 text-white" />
-            </div>
-            
-            {/* AI badge */}
-            <div className="absolute left-4 top-4 bg-slate-900 rounded-full px-3 py-1">
-              <div className="flex items-center gap-1">
-                <Target className="w-3 h-3 text-white" />
-                <span className="text-white font-semibold text-sm">AI</span>
-              </div>
-            </div>
-            
-            {/* AGI badge */}
-            <div className="absolute left-12 bottom-4 bg-slate-900 rounded-full px-3 py-1">
-              <span className="text-white font-semibold text-sm">AGI</span>
-            </div>
+            <img 
+              src="/lovable-uploads/35bcfb35-ba18-4ef3-8e29-0650128380c9.png" 
+              alt="Team network graphic with AI/AGI elements" 
+              className="w-full h-auto max-w-4xl mx-auto"
+            />
           </div>
           
           <Button 

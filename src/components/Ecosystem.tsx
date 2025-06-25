@@ -38,58 +38,55 @@ const Ecosystem = () => {
               </div>
             </div>
             
-            {/* Right side - Ecosystem pills */}
-            <div className="space-y-6">
+            {/* Right side - Ecosystem pills in 2-per-row layout using uploaded reference */}
+            <div className="space-y-4">
               {/* Row 1 */}
-              <div className="flex gap-4">
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <Brain className="w-6 h-6 text-blue-600" />
-                  <div>
-                    <div className="font-bold text-gray-900 text-sm">FOUNDATIONAL</div>
-                    <div className="font-bold text-gray-900 text-sm">DOMAIN-SPECIFIC AGI</div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <Brain className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">
+                    FOUNDATIONAL<br />DOMAIN-SPECIFIC AGI
                   </div>
                 </div>
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <Mountain className="w-6 h-6 text-blue-600" />
-                  <div className="font-bold text-gray-900 text-sm">BASECAMP</div>
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <Mountain className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">BASECAMP</div>
                 </div>
               </div>
               
               {/* Row 2 */}
-              <div className="flex gap-4">
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <Users className="w-6 h-6 text-blue-600" />
-                  <div>
-                    <div className="font-bold text-gray-900 text-sm">ADVANCED</div>
-                    <div className="font-bold text-gray-900 text-sm">TEAMMATES</div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <Users className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">
+                    ADVANCED<br />TEAMMATES
                   </div>
                 </div>
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <MessageCircle className="w-6 h-6 text-blue-600" />
-                  <div className="font-bold text-gray-900 text-sm">ADVISORY</div>
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <MessageCircle className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">ADVISORY</div>
                 </div>
               </div>
               
               {/* Row 3 */}
-              <div className="flex gap-4">
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <Layers className="w-6 h-6 text-blue-600" />
-                  <div>
-                    <div className="font-bold text-gray-900 text-sm">INTEGRATED</div>
-                    <div className="font-bold text-gray-900 text-sm">MIDDLEWARE</div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <Layers className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">
+                    INTEGRATED<br />MIDDLEWARE
                   </div>
                 </div>
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <Settings className="w-6 h-6 text-blue-600" />
-                  <div className="font-bold text-gray-900 text-sm">OPERATIONS</div>
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <Settings className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">OPERATIONS</div>
                 </div>
               </div>
               
-              {/* Row 4 */}
+              {/* Row 4 - Centered */}
               <div className="flex justify-center">
-                <div className="bg-white rounded-full border-2 border-gray-300 px-6 py-4 flex items-center gap-3 shadow-sm">
-                  <Cpu className="w-6 h-6 text-blue-600" />
-                  <div className="font-bold text-gray-900 text-sm">TECHNOLOGY</div>
+                <div className="bg-white rounded-full border-2 border-gray-300 px-4 py-3 flex items-center gap-2 shadow-sm">
+                  <Cpu className="w-5 h-5 text-blue-600" />
+                  <div className="text-xs font-bold text-gray-900">TECHNOLOGY</div>
                 </div>
               </div>
             </div>
