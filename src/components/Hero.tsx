@@ -9,80 +9,76 @@ const Hero = () => {
     }
   };
 
-  const scrollToBottom = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-  };
-
   return (
-    <section className="relative min-h-screen overflow-hidden bg-gray-100">
-      {/* Diagonal geometric shapes */}
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Diagonal split backgrounds */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-white transform -skew-x-12"></div>
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-200 transform skew-x-12"></div>
+        {/* Left half - white */}
+        <div 
+          className="absolute inset-0 bg-white"
+          style={{
+            clipPath: 'polygon(0 0, 60% 0, 40% 100%, 0 100%)'
+          }}
+        ></div>
+        
+        {/* Right half - light grey */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundColor: '#f2f3f8',
+            clipPath: 'polygon(40% 0, 100% 0, 100% 100%, 60% 100%)'
+          }}
+        ></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="relative z-20 flex justify-between items-center p-6">
-        <div className="text-2xl font-bold text-gray-900 underline">
-          Everest AI Ventures
-        </div>
-        <div className="flex items-center gap-8">
-          <a href="https://ariagen.ai/" className="text-gray-700 underline">Aria AI</a>
-          <a href="#" className="text-gray-700 underline">Basecamp</a>
-          <a href="#" className="text-gray-700 underline">Advisory</a>
-          <Button 
-            onClick={scrollToBottom}
-            className="bg-slate-900 text-white px-6 py-2 rounded-none"
-          >
-            Join Us
-          </Button>
-        </div>
-      </nav>
-
-      <div className="relative z-10 container mx-auto px-6 pt-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Left Content - Updated to match sketch */}
-            <div>
-              <h1 className="text-6xl font-bold text-gray-900 mb-8 leading-tight">
-                Partner with us
-                <br />
-                to create market
-                <br />
-                defining industries
-              </h1>
-              
-              <div className="mb-12">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                  Reimagining industries
-                </h2>
-                
-                <p className="text-xl text-gray-700 mb-8">
-                  with <span className="font-light italic">unstoppable intelligence</span>
-                </p>
-              </div>
-              
-              <p className="text-xl text-gray-700 mb-8">
-                from groundbreaking innovations to sustainable human-aligned solutions
-              </p>
-              
-              <Button 
-                size="lg" 
-                onClick={scrollToNext}
-                className="bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 text-lg font-semibold tracking-wider rounded-none"
-              >
-                LEARN MORE
-              </Button>
+      <div className="relative z-10 container mx-auto px-6 min-h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-screen">
+          {/* Left Side Content */}
+          <div className="flex flex-col justify-center space-y-8 lg:pr-8">
+            {/* Main headline */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight uppercase" style={{ color: '#071741' }}>
+              PARTNER WITH US<br />
+              TO CREATE<br />
+              MARKET<br />
+              DEFINING<br />
+              VENTURES
+            </h1>
+            
+            {/* Subheading */}
+            <div className="space-y-2">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold" style={{ color: '#071741' }}>
+                Reimagining industries
+              </h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold" style={{ color: '#071741' }}>
+                w/ unstoppable <em className="italic">intelligence</em>
+              </h2>
             </div>
             
-            {/* Right side - Simplified or removed graphic as per sketch */}
-            <div className="relative h-96 flex justify-center items-center">
-              <div className="w-full max-w-md h-auto flex items-center justify-center">
-                {/* Simple geometric element or leave empty as per sketch */}
-                <div className="w-32 h-32 border-4 border-gray-400 rounded-full flex items-center justify-center">
-                  <div className="w-16 h-16 bg-gray-400 rounded-full"></div>
-                </div>
-              </div>
+            {/* Description paragraph */}
+            <p className="text-base text-gray-600 max-w-md leading-relaxed">
+              from groundbreaking innovations to sustainable human-aligned solutions
+            </p>
+            
+            {/* Learn More button */}
+            <div>
+              <Button 
+                onClick={scrollToNext}
+                className="bg-white border-2 border-black text-black hover:bg-gray-50 px-8 py-3 rounded-md font-medium"
+              >
+                Learn More
+              </Button>
+            </div>
+          </div>
+          
+          {/* Right Side Content - Graphic */}
+          <div className="flex justify-center items-center lg:justify-end relative">
+            <div className="relative max-w-lg w-full">
+              <img 
+                src="/assets/images/graphic 1.png" 
+                alt="Technology graphic" 
+                className="w-full h-auto max-w-full object-contain"
+                style={{ maxHeight: '500px' }}
+              />
             </div>
           </div>
         </div>
