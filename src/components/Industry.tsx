@@ -43,7 +43,7 @@ const Industry = () => {
             
             {/* Automotive */}
             <div id="automotive-box" className="relative rounded-3xl overflow-hidden h-64 bg-cyan-100">
-              <!-- Replace automotive image later -->
+              {/* Replace automotive image later */}
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-900 opacity-80"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">AUTOMOTIVE</h3>

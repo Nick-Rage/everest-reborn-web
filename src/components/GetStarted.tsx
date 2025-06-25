@@ -12,7 +12,7 @@ const GetStarted = () => {
     >
       {/* Video background placeholder for Media3.mp4 */}
       <div id="MEDIA_PLACEHOLDER_JOIN_US" className="absolute inset-0">
-        <!-- Replace background with Media3.mp4 manually -->
+        {/* Replace background with Media3.mp4 manually */}
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/80 to-blue-900/80"></div>
       </div>
       
