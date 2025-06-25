@@ -60,10 +60,11 @@ const Focus = () => {
             />
           </div>
           
-          {/* Bottom geometric accent with large navy diamond */}
+          {/* Bottom section with fixed navy diamond positioning */}
           <div className="relative text-center">
-            <div className="absolute right-0 bottom-0 w-48 h-48 bg-slate-900 transform rotate-45 nav-diamond"></div>
-            <div className="relative z-10 mb-8 co-found-text">
+            {/* Navy diamond moved behind content with transparency */}
+            <div className="absolute right-0 bottom-0 w-48 h-48 bg-slate-900 transform rotate-45 opacity-20 z-0"></div>
+            <div className="relative z-10 mb-8">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 CO-FOUND WITH EVEREST AND BUILD THE NEXT GREAT VENTURE
               </h3>
@@ -72,7 +73,7 @@ const Focus = () => {
             <Button 
               size="lg" 
               onClick={scrollToNext}
-              className="bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 text-lg font-semibold tracking-wider rounded-none"
+              className="bg-transparent border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 text-lg font-semibold tracking-wider rounded-none relative z-10"
             >
               LEARN MORE
             </Button>
