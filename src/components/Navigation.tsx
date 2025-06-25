@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { TrendingUp, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 const Navigation = () => {
@@ -20,14 +20,22 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={scrollToTop}>
-            <TrendingUp className="w-8 h-8 mr-2 text-blue-600" />
+            <img 
+              src="/lovable-uploads/c98625b8-1979-4252-a268-c5985cf981c0.png" 
+              alt="Mountain logo" 
+              className="w-8 h-8 mr-2"
+            />
             <span className="text-xl font-bold text-gray-900">Everest</span>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <div className="flex items-center cursor-pointer" onClick={scrollToTop}>
-              <TrendingUp className="w-6 h-6 text-blue-600" />
+              <img 
+                src="/lovable-uploads/c98625b8-1979-4252-a268-c5985cf981c0.png" 
+                alt="Mountain logo" 
+                className="w-6 h-6"
+              />
             </div>
             <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About Us</a>
             <a href="#industry" className="text-gray-700 hover:text-blue-600 transition-colors">Industry</a>

@@ -15,8 +15,13 @@ const Basecamp = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
             {/* Left Panel - Everest Basecamp */}
-            <div className="relative h-96 bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center text-white p-8">
-              <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="relative h-96 flex items-center justify-center text-white p-8"
+                 style={{
+                   backgroundImage: `url('/lovable-uploads/c8d1da87-157c-4298-9ec2-6a256b85f1f1.png')`,
+                   backgroundSize: 'cover',
+                   backgroundPosition: 'center'
+                 }}>
+              <div className="absolute inset-0 bg-blue-600 opacity-60"></div>
               <div className="relative z-10 text-center">
                 <h3 className="text-3xl font-bold mb-6">EVEREST BASECAMP</h3>
                 <p className="text-lg leading-relaxed mb-6">
@@ -26,8 +31,13 @@ const Basecamp = () => {
             </div>
             
             {/* Right Panel - Advisory */}
-            <div className="relative h-96 bg-gradient-to-br from-slate-900 to-slate-700 flex items-center justify-center text-white p-8">
-              <div className="absolute inset-0 bg-black opacity-40"></div>
+            <div className="relative h-96 flex items-center justify-center text-white p-8"
+                 style={{
+                   backgroundImage: `url('/lovable-uploads/46f4c740-73a2-4e59-bdaf-639021b9901c.png')`,
+                   backgroundSize: 'cover',
+                   backgroundPosition: 'center'
+                 }}>
+              <div className="absolute inset-0 bg-gray-700 opacity-60"></div>
               <div className="relative z-10 text-center">
                 <h3 className="text-3xl font-bold mb-6">ADVISORY</h3>
                 <p className="text-lg leading-relaxed mb-6">

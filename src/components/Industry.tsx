@@ -42,17 +42,15 @@ const Industry = () => {
             </div>
             
             {/* Automotive */}
-            <div id="automotive-box" className="relative rounded-3xl overflow-hidden h-64 bg-cyan-100">
-              {/* Replace automotive image later */}
+            <div className="relative rounded-3xl overflow-hidden h-64">
+              <img 
+                src="/lovable-uploads/f824026c-3ea8-43fc-8554-b4ddb4840b2a.png" 
+                alt="Automotive professional" 
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-900 opacity-80"></div>
               <div className="absolute bottom-4 left-4 text-white">
                 <h3 className="text-xl font-bold">AUTOMOTIVE</h3>
-              </div>
-              {/* Digital pattern overlay */}
-              <div className="absolute inset-4 grid grid-cols-4 gap-1 opacity-30">
-                {Array.from({ length: 16 }).map((_, i) => (
-                  <div key={i} className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
-                ))}
               </div>
             </div>
             
