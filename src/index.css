@@ -106,7 +106,7 @@
 /* Custom styling for visual layering */
 .nav-diamond { 
   z-index: 0; 
-  opacity: 0.2; 
+  opacity: 0.3; 
   position: absolute; 
 }
 

@@ -1,11 +1,12 @@
 
 import { Button } from "@/components/ui/button";
+import { Target, Brain, Zap } from "lucide-react";
 
 const Hero = () => {
   const scrollToNext = () => {
-    const focusSection = document.getElementById('focus');
-    if (focusSection) {
-      focusSection.scrollIntoView({ behavior: 'smooth' });
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -42,14 +43,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 pt-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left Content - Updated to match sketch */}
+            {/* Left Content */}
             <div>
               <h1 className="text-6xl font-bold text-gray-900 mb-8 leading-tight">
                 PARTNER WITH US TO CREATE
                 <br />
-                <span className="block">MARKET DEFINING</span>
-                <br />
-                <span className="block">INDUSTRIES</span>
+                <span className="block">MARKET DEFINING VENTURES</span>
               </h1>
               
               <div className="mb-12">
@@ -58,7 +57,7 @@ const Hero = () => {
                 </h2>
                 
                 <p className="text-xl text-gray-700 mb-8">
-                  w/ <span className="font-light italic">unstoppable intelligence</span>
+                  w/ unstoppable <span className="font-light italic">intelligence</span>
                 </p>
               </div>
               
@@ -75,9 +74,13 @@ const Hero = () => {
               </Button>
             </div>
             
-            {/* Right side - Empty to match sketch */}
+            {/* Right side - AI/AGI graphic using uploaded image */}
             <div className="relative h-96 flex justify-center items-center">
-              {/* Removed AI/AGI graphic as requested */}
+              <img 
+                src="/lovable-uploads/9d252b33-35a2-43ca-9814-da49e1c3b4ee.png" 
+                alt="AI to AGI transformation graphic" 
+                className="w-full max-w-md h-auto object-contain"
+              />
             </div>
           </div>
         </div>
